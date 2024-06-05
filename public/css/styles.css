@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #f0f8ff 0%, #d6e0f0 50%, #eef2f8 100%); /* Gradient background */
+    animation: background-pulse 10s ease infinite alternate; /* Pulsing animation for body */
+  }
+  
+  @keyframes background-pulse {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.9;
+    }
+  }
+  
+  header {
+    background: linear-gradient(to right, #ff512f 0%, #dd2476 100%); /* Vibrant gradient for header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  @keyframes header-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c23617; /* Darker shade on hover */
+  }
+  
+  .button {  /* Styles for buttons */
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #337ab7; /* Darker shade on hover */
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background: linear-gradient(to bottom, #f94d95 0%, #dd2476 100%); /* Two-tone gradient for footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  
+  /* Responsive Design */
+  
+  @media screen and (max-width: 768px) {
+    header,
+    nav,
+    main {
+      padding: 10px;
+    }
+  }
+  
+  /* Footer Wave Animation */
+  footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/images/wave1.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  }
+  
+  footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+  }
+  footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation: animateWave 3s linear infinite;
+  }
+  
+  footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+  }
+  
+  @keyframes animateWave {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-position-x: 0px;
+    }
+  }
+  
+  @keyframes animateWave_02 {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
+  }
+  
